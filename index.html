@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio | Frontend Developer & Multimedia Engineer</title>
-  <meta name="description" content="Portofolio digital Frontend Developer dan Multimedia Engineer dengan keahlian Laravel, MySQL, HTML, CSS, Tailwind, dan Figma.">
+  <title>Portofolio | Andra Rizki</title>
+  <meta name="description" content="Portofolio digital Frontend Developer dan Multimedia Engineer.">
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <!-- Google Fonts: Poppins (Lebih Modern & Clean) -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">   <!-- Boxicons (Untuk Logo Real: GitHub, Gmail, dll) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -17,8 +19,8 @@
   <header class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="#home" class="logo">
-        <span class="logo-mark">&lt;/&gt;</span>
-        <span class="logo-text">Andra Rizki Tadiya Pratama</span>
+        <div class="logo-icon">A</div>
+        <span class="logo-text">Andra<span class="text-blue">.dev</span></span>
       </a>
 
       <!-- Desktop Nav -->
@@ -27,13 +29,11 @@
         <a href="#about" class="nav-link">Tentang</a>
         <a href="#skills" class="nav-link">Keahlian</a>
         <a href="#projects" class="nav-link">Proyek</a>
-        <a href="#experience" class="nav-link">Sertifikasi</a>
-        <a href="#education" class="nav-link">Pendidikan</a>
         <a href="#contact" class="nav-link nav-btn">Kontak</a>
       </nav>
 
       <!-- Hamburger Button (Mobile) -->
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -42,7 +42,7 @@
   </header>
 
   <main>
-    <!-- Hero / Home Section -->
+    <!-- Hero Section -->
     <section class="hero-section" id="home">
       <div class="container hero-grid">
         <div class="hero-content">
@@ -53,9 +53,6 @@
           <h1 class="hero-title">
             Frontend Developer & <span class="text-blue">Multimedia Engineer</span>
           </h1>
-          <p class="hero-tagline">
-            Membangun antarmuka web yang fungsional, responsif, dan berorientasi pada kemudahan pengguna.
-          </p>
           <p class="hero-desc">
             Lulusan D4 Teknologi Rekayasa Multimedia dengan sertifikasi Junior Web Developer standar nasional. Berfokus pada perancangan antarmuka (UI/UX) dan pengembangan frontend web dengan integrasi basis data.
           </p>
@@ -64,16 +61,15 @@
             <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
           </div>
         </div>
-
         <div class="hero-visual">
           <div class="hero-image-wrapper">
-            <img src="asset/profile.jpg" alt="Foto Profil [Nama Anda]" class="hero-image" id="hero-img">
+            <img src="pp.jpeg" alt="Foto Profil Andra" class="hero-image">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Tentang Section -->
     <section class="section bg-light" id="about">
       <div class="container">
         <div class="section-header">
@@ -85,7 +81,7 @@
           <div class="about-card">
             <h3>Latar Belakang & Minat</h3>
             <p>
-              Saya merupakan lulusan D4 Teknologi Rekayasa Multimedia yang memiliki minat besar pada perancangan antarmuka pengguna (UI/UX) dan implementasi frontend web. Memiliki bekal sertifikasi Junior Web Developer berstandar nasional, saya terbiasa menerjemahkan kebutuhan interaksi visual menjadi kode web yang rapi, fungsional, dan ramah pengguna.
+              Saya merupakan lulusan D4 Teknologi Rekayasa Multimedia Politeknik Elektronika Negeri Surabaya yang memiliki minat besar pada perancangan antarmuka pengguna (UI/UX), implementasi frontend web dan Multimedia. Memiliki bekal sertifikasi Junior Web Developer berstandar nasional, saya terbiasa menerjemahkan kebutuhan interaksi visual menjadi kode web yang rapi, fungsional, dan ramah pengguna.
             </p>
           </div>
           <div class="about-card">
@@ -98,7 +94,7 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Keahlian Section -->
     <section class="section" id="skills">
       <div class="container">
         <div class="section-header">
@@ -107,269 +103,127 @@
         </div>
 
         <div class="skills-grid">
-          <!-- Programming Languages -->
           <div class="skill-category">
-            <div class="category-icon">💻</div>
-            <h3>Programming Languages</h3>
-            <p class="category-desc">Bahasa yang digunakan untuk logika aplikasi dan markup halaman web.</p>
+            <div class="category-icon"><i class='bx bx-code-alt'></i></div>
+            <h3>Programming</h3>
+            <p class="category-desc">Bahasa yang digunakan untuk logika aplikasi dan markup.</p>
             <ul class="skill-list">
-              <li class="skill-item">PHP</li>
-              <li class="skill-item">HTML</li>
-              <li class="skill-item">CSS</li>
+              <li>PHP</li>
+              <li>HTML</li>
+              <li>C/C++</li>
             </ul>
           </div>
-
-          <!-- Frontend -->
           <div class="skill-category">
-            <div class="category-icon">🎨</div>
-            <h3>Frontend Development</h3>
-            <p class="category-desc">Styling dan kerangka kerja antarmuka responsif di sisi klien.</p>
+            <div class="category-icon"><i class='bx bx-palette'></i></div>
+            <h3>Frontend Dev</h3>
+            <p class="category-desc">Styling dan kerangka kerja antarmuka responsif.</p>
             <ul class="skill-list">
-              <li class="skill-item">HTML5 & Semantic Markup</li>
-              <li class="skill-item">Modern CSS & Flexbox/Grid</li>
-              <li class="skill-item">Tailwind CSS</li>
+              <li>Bootstrap</li>
+              <li>Modern CSS/li>
+              <li>Tailwind CSS</li>
+              
             </ul>
           </div>
-
-          <!-- Tools & DevOps -->
           <div class="skill-category">
-            <div class="category-icon">🛠️</div>
-            <h3>Tools & Backend Ecosystem</h3>
-            <p class="category-desc">Basis data, framework, version control, dan desain antarmuka.</p>
+            <div class="category-icon"><i class='bx bx-edit-alt'></i></div>
+            <h3>Tools & Backend</h3>
+            <p class="category-desc">Basis data, framework, dan desain antarmuka.</p>
             <ul class="skill-list">
-              <li class="skill-item">Laravel</li>
-              <li class="skill-item">MySQL</li>
-              <li class="skill-item">Git (Version Control)</li>
-              <li class="skill-item">Figma (UI/UX Design)</li>
-              <li class="skill-item">Canva</li>
+              <li>Fotography</li>
+              <li>Videography</li>
+              <li>Editing</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Carousel 4 Foto Lanskap) -->
     <section class="section bg-light" id="projects">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Proyek Pilihan</h2>
-          <p class="section-subtitle">Implementasi nyata dari keahlian teknis dan peran saya dalam proyek</p>
+          <p class="section-subtitle">Implementasi nyata dari keahlian teknis</p>
         </div>
 
-        <div class="projects-list">
-          <!-- Project 1 (Main Highlight) -->
-          <article class="project-card featured">
-            <div class="project-badge">Proyek Utama (Web Application)</div>
-            <div class="project-content">
-              <h3 class="project-title">Website Pencarian & Pengajuan PKL Siswa SMK</h3>
-              <p class="project-overview">
-                Aplikasi web yang dirancang untuk mempermudah siswa SMK menemukan lowongan Praktik Kerja Lapangan (PKL), melakukan pengajuan lamaran daring, serta membantu pihak pengelola memverifikasi calon peserta secara transparan.
-              </p>
+        <article class="project-card">
+          <!-- Slider Foto Lanskap -->
+          <div class="carousel-container">
+            <div class="carousel-track" id="project-track">
+              <!-- Ganti src dengan foto proyek Anda yang sebenarnya -->
+              <img src="beranda.jpeg" alt="Tampilan Dashboard 1">
+              <img src="admin.jpeg" alt="Tampilan Dashboard 2">
+              <img src="siswa.jpeg" alt="Tampilan Koding 3">
+              <img src="dudi.jpeg" alt="Tampilan Mobile 4">
+            </div>
+            <button class="carousel-btn prev" id="btn-prev">&#10094;</button>
+            <button class="carousel-btn next" id="btn-next">&#10095;</button>
+          </div>
 
-              <div class="project-details-grid">
-                <div class="detail-block">
-                  <strong>Masalah:</strong>
-                  <p>Pencarian tempat PKL manual menyulitkan siswa memantau kepastian lamaran dan membebani pengelola dalam menyortir data pendaftar.</p>
-                </div>
-                <div class="detail-block">
-                  <strong>Solusi:</strong>
-                  <p>Membangun portal web terpadu dengan autentikasi siswa, formulir lamaran online, dan dasbor seleksi/persetujuan (ACC).</p>
-                </div>
-                <div class="detail-block">
-                  <strong>Peran Saya:</strong>
-                  <p>Frontend Developer & Database Designer (Membangun antarmuka web interaktif serta merancang skema relasi database di MySQL).</p>
-                </div>
-                <div class="detail-block">
-                  <strong>Fitur Kunci:</strong>
-                  <ul class="detail-list">
-                    <li>Autentikasi & manajemen akun siswa</li>
-                    <li>Sistem pengajuan/melamar PKL</li>
-                    <li>Fitur persetujuan / verifikasi (ACC) pendaftar</li>
-                  </ul>
-                </div>
+          <!-- Detail Proyek -->
+          <div class="project-content">
+            <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Website Pencarian & Pengajuan PKL Siswa SMK</h3>
+            <div class="project-details-grid">
+              <div class="detail-block">
+                <strong>Masalah:</strong>
+                <p>Pencarian tempat PKL manual menyulitkan siswa memantau lamaran.</p>
               </div>
-
-              <div class="project-tech-tags">
-                <span class="tag">Laravel</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">PHP</span>
-                <span class="tag">HTML / CSS</span>
-                <span class="tag">Tailwind CSS</span>
+              <div class="detail-block">
+                <strong>Solusi:</strong>
+                <p>Portal web terpadu dengan formulir lamaran online dan sistem persetujuan</p>
               </div>
-
-              <div class="project-links">
-                <span class="link-placeholder">Link GitHub: [Belum diisi]</span>
-                <span class="link-placeholder">Demo Live: [Belum diisi]</span>
+              <div class="detail-block">
+                <strong>Peran Saya:</strong>
+                <p>Frontend Developer & Database Designer.</p>
               </div>
             </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">REST API untuk Aplikasi Mobile</h3>
-              <p class="project-overview">
-                Layanan antarmuka pemrograman aplikasi (API) backend yang menyajikan data secara terstruktur dan efisien untuk kebutuhan konsumsi aplikasi mobile.
-              </p>
-
-              <div class="project-details-grid">
-                <div class="detail-block">
-                  <strong>Masalah:</strong>
-                  <p>Aplikasi mobile membutuhkan pertukaran data yang terstandarisasi, aman, dan konsisten dari basis data server.</p>
-                </div>
-                <div class="detail-block">
-                  <strong>Solusi:</strong>
-                  <p>Menyusun endpoint RESTful API terstruktur menggunakan Laravel dengan format data JSON untuk komunikasi aplikasi mobile.</p>
-                </div>
-                <div class="detail-block">
-                  <strong>Peran Saya:</strong>
-                  <p>API & Database Developer (Menyusun routing API, controller, query data, dan struktur tabel di MySQL).</p>
-                </div>
-                <div class="detail-block">
-                  <strong>Fitur Kunci:</strong>
-                  <ul class="detail-list">
-                    <li>Endpoint pengiriman & pengambilan data JSON</li>
-                    <li>Manajemen transaksi data terintegrasi MySQL</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="project-tech-tags">
-                <span class="tag">Laravel</span>
-                <span class="tag">PHP</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">REST API</span>
-              </div>
-
-              <div class="project-links">
-                <span class="link-placeholder">Link GitHub: [Belum diisi]</span>
-                <span class="link-placeholder">Dokumentasi API: [Belum diisi]</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience & Certification Section -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Sertifikasi Kompetensi</h2>
-          <p class="section-subtitle">Pengakuan dan standardisasi kemampuan teknis</p>
-        </div>
-
-        <div class="timeline-container">
-          <div class="timeline-card">
-            <div class="timeline-icon">🎖️</div>
-            <div class="timeline-body">
-              <span class="timeline-badge">Sertifikasi Nasional</span>
-              <h3 class="timeline-title">Junior Web Developer (JWD)</h3>
-              <p class="timeline-meta">Penerbit: [Belum diisi - misal: BNSP / Kominfo] • Tahun: [Belum diisi]</p>
-              <p class="timeline-desc">
-                Tersertifikasi standar nasional untuk kompetensi pemrograman web dasar hingga menengah, penanganan basis data relasional, pengkodean antarmuka semantik, serta penerapan logika alur kerja web.
-              </p>
+            <div class="project-tech-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">PHP</span>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="section bg-light" id="education">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Pendidikan Formal</h2>
-          <p class="section-subtitle">Fondasi akademik di bidang rekayasa multimedia dan teknologi</p>
-        </div>
-
-        <div class="timeline-container">
-          <div class="timeline-card">
-            <div class="timeline-icon">🎓</div>
-            <div class="timeline-body">
-              <span class="timeline-badge">Diploma IV (Sarjana Terapan)</span>
-              <h3 class="timeline-title">D4 Teknologi Rekayasa Multimedia</h3>
-              <p class="timeline-meta">Institusi: [Belum diisi - Nama Perguruan Tinggi] • Periode: [Belum diisi]</p>
-              <p class="timeline-desc">
-                Mempelajari integrasi teknologi digital, perancangan interaksi pengguna (UI/UX), pemrosesan aset grafis dan multimedia, serta pengembangan aplikasi web terstruktur.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- Hubungi Saya Section -->
     <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Hubungi Saya</h2>
-          <p class="section-subtitle">Terbuka untuk kesempatan kerja full-time, magang, maupun proyek kolaboratif</p>
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title" style="text-align: left;">Mari Berkolaborasi</h2>
+          <p>Jika Anda mencari kandidat Frontend Developer atau Multimedia Engineer, mari terhubung!</p>
+          
+          <!-- Kontak dengan Logo Real (Boxicons) -->
+          <div class="contact-methods">
+            <a href="mailto:rizkyandra76@gmail.com" class="contact-link">
+              <i class='bx bxl-gmail'></i> rizkyandra76@gmail.com
+            </a>
+            <a href="https://github.com/andrarizkyy" target="_blank" class="contact-link">
+              <i class='bx bxl-github'></i> github.com/andrarizkyy
+            </a>
+            <a href="https://linkedin.com/in/Andra Rizki target="_blank" class="contact-link">
+              <i class='bx bxl-linkedin-square'></i> linkedin.com/in/andrarizkyy
+            </a>
+          </div>
+          
         </div>
-
-        <div class="contact-grid">
-          <!-- Contact Info -->
-          <div class="contact-info">
-            <h3>Mari Berdiskusi</h3>
-            <p>
-              Jika Anda sedang mencari kandidat untuk posisi Frontend Developer atau Multimedia Engineer yang memiliki pemahaman teknis web dan antarmuka, silakan hubungi saya melalui jalur berikut:
-            </p>
-
-            <div class="contact-methods">
-              <div class="contact-method-item">
-                <span class="method-icon">✉️</span>
-                <div>
-                  <strong>Email:</strong>
-                  <p>[Belum diisi - email@anda.com]</p>
-                </div>
-              </div>
-              <div class="contact-method-item">
-                <span class="method-icon">🐙</span>
-                <div>
-                  <strong>GitHub:</strong>
-                  <p>[Belum diisi - github.com/username]</p>
-                </div>
-              </div>
-              <div class="contact-method-item">
-                <span class="method-icon">💼</span>
-                <div>
-                  <strong>LinkedIn:</strong>
-                  <p>[Belum diisi - linkedin.com/in/username]</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Form (UI Front) -->
-          <div class="contact-form-card">
-            <form id="contact-form" onsubmit="event.preventDefault(); alert('Terima kasih! Fitur form siap dihubungkan.');">
-              <div class="form-group">
-                <label for="name">Nama Lengkap</label>
-                <input type="text" id="name" placeholder="Masukkan nama Anda" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Alamat Email</label>
-                <input type="email" id="email" placeholder="nama@email.com" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Pesan</label>
-                <textarea id="message" rows="4" placeholder="Tuliskan pesan atau penawaran kerja Anda..." required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
-            </form>
-          </div>
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <input type="text" placeholder="Nama Lengkap" required class="form-input">
+            <input type="email" placeholder="Alamat Email" required class="form-input">
+            <textarea rows="4" placeholder="Pesan Anda..." required class="form-input"></textarea>
+            <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; <span id="current-year">2026</span> [Nama Anda]. Frontend Developer & Multimedia Engineer.</p>
-      <div class="footer-links">
-        <a href="#home">Kembali ke Atas ↑</a>
-      </div>
+      <p>&copy; 2026 Andra Rizki Tadiya Pratama.</p>
     </div>
   </footer>
 

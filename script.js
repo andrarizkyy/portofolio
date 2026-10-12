@@ -1,63 +1,30 @@
-/**
- * Interaktivitas Portofolio Digital
- * - Menu Toggle Responsif (Mobile Hamburger)
- * - Auto-close mobile menu saat link diklik
- * - Active Navigation Highlight saat di-scroll
- * - Dynamic Year di Footer
- */
+// 1. Hamburger Menu Toggle (Mobile Responsive)
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-  const navItems = document.querySelectorAll('.nav-link');
-  const sections = document.querySelectorAll('section');
-  const currentYearSpan = document.getElementById('current-year');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 
-  // 1. Tampilkan Tahun Berjalan di Footer
-  if (currentYearSpan) {
-    currentYearSpan.textContent = new Date().getFullYear();
-  }
+// 2. Image Carousel / Slider Logic
+const track = document.getElementById('project-track');
+const btnPrev = document.getElementById('btn-prev');
+const btnNext = document.getElementById('btn-next');
 
-  // 2. Toggle Mobile Navigation Menu
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('active');
-      hamburger.setAttribute('aria-expanded', !isExpanded);
-    });
-  }
+// Fungsi geser ke kanan
+btnNext.addEventListener('click', () => {
+  const slideWidth = track.clientWidth;
+  track.scrollBy({ left: slideWidth, behavior: 'smooth' });
+});
 
-  // 3. Tutup Menu Mobile Saat Link Navigasi Diklik
-  navItems.forEach(item => {
-    item.addEventListener('click', () => {
-      if (hamburger && navLinks.classList.contains('active')) {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-    });
-  });
+// Fungsi geser ke kiri
+btnPrev.addEventListener('click', () => {
+  const slideWidth = track.clientWidth;
+  track.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+});
 
-  // 4. ScrollSpy: Update Active Navigation Link saat Halaman Di-scroll
-  window.addEventListener('scroll', () => {
-    let currentSectionId = '';
-    const scrollPosition = window.scrollY + 120; // offset header
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute('id');
-      }
-    });
-
-    navItems.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('active');
-      }
-    });
-  });
+// 3. Form Submission Prevent Default
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Pesan berhasil disimulasikan! Siap dihubungkan ke backend.');
 });
